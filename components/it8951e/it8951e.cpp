@@ -245,6 +245,8 @@ void IT8951ESensor::setup() {
 
     this->init_internal_(this->get_buffer_length_());
 
+    this->clear();
+    delay(100);
     ESP_LOGE(TAG, "Init SUCCESS.");
 }
 
